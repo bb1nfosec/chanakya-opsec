@@ -187,7 +187,17 @@ SOFTWARE.
 
 **For legal inquiries, removal requests, or compliance issues:**
 
-**Email:** [bb1nfosec@protonmail.com] (Replace with actual contact)
+**Method 1: GitHub Issue (Preferred - Public Transparency)**
+- Create issue: https://github.com/bb1nfosec/chanakya-opsec/issues/new
+- Use template: `Legal - Removal Request` or `Legal - DMCA`
+- **Public by default** (transparency)
+- For sensitive requests: Email maintainers FIRST to request private handling
+
+**Method 2: OPSEC-Friendly Contact**
+- **PGP-Encrypted Email** to: legal@chanakya-opsec.org (domain to be set up)
+- **PGP Public Key:** See [LEGAL-PGP.asc](LEGAL-PGP.asc)
+- For truly sensitive matters requiring anonymity
+- **Tor .onion Address:** (To be established for high-risk whistleblowers)
 
 **Response Time:** We aim to respond within 72 hours (3 business days)
 
@@ -201,11 +211,18 @@ SOFTWARE.
 
 If you believe content in this repository infringes your copyright:
 
-1. **Send a DMCA Notice** to [bb1nfosec@protonmail.com]
+**Method 1: GitHub DMCA Form (Official)**
+- Use GitHub's official DMCA process: https://github.com/contact/dmca
+- GitHub will forward to us automatically
+- **Preferred method** (official, tracked)
+
+**Method 2: GitHub Issue**
+1. Create issue: https://github.com/bb1nfosec/chanakya-opsec/issues/new
+2. Select template: `Legal - DMCA Takedown`
 
 Include:
 - Identification of copyrighted work
-- Identification of infringing material (URL, file path)
+- Identification of infringing material (file path, line numbers)
 - Your contact information
 - Statement of good faith belief
 - Statement under penalty of perjury
@@ -215,6 +232,7 @@ Include:
 - Review the claim within 5 business days
 - Remove infringing content if valid
 - Notify the submitter (if applicable)
+- Public transparency (issue remains visible unless GitHub removes)
 
 #### Other Removal Requests
 
@@ -230,16 +248,24 @@ Include:
 - "My government doesn't like this" (unless backed by legal process in home jurisdiction of repository)
 
 **Process:**
-1. Email [bb1nfosec@protonmail.com] with:
-   - Specific content to remove (file path, line numbers)
-   - Legal basis for removal
-   - Supporting documentation (court order, legal statute)
+1. **Create GitHub Issue:**
+   - URL: https://github.com/bb1nfosec/chanakya-opsec/issues/new
+   - Template: `Legal - Content Removal Request`
+   - Include:
+     - Specific content to remove (file path, line numbers)
+     - Legal basis for removal
+     - Supporting documentation (attach or link to court order, statute)
+     - Your contact information (or use pseudonym if high-risk)
 
-2. We review within 7 business days
+2. **For Court Orders / Sensitive Matters:**
+   - If court order contains sealed/sensitive info, email PGP-encrypted
+   - Reference the GitHub issue number in encrypted email
 
-3. If valid: Content removed, requester notified
+3. We review within 7 business days
 
-4. If invalid: Requester notified with explanation
+4. If valid: Content removed, issue closed with explanation
+
+5. If invalid: Issue closed with explanation (public transparency)
 
 ---
 
@@ -337,7 +363,9 @@ Include:
    - Interpol: interpol.int/Contacts
    - Local law enforcement
 
-2. **Notify us** (optional): [bb1nfosec@protonmail.com]
+2. **Notify us** (optional):
+   - GitHub Issue: https://github.com/bb1nfosec/chanakya-opsec/issues/new
+   - Template: `Security - Illegal Use Report`
    - We will cooperate with lawful investigations
    - We may remove content facilitating crime
 
@@ -403,9 +431,17 @@ SOFTWARE.
 
 ---
 
-**Contact for Legal Matters:** bb1nfosec@protonmail.com
+**Contact for Legal Matters:**
+- GitHub Issues (Preferred): https://github.com/bb1nfosec/chanakya-opsec/issues/new
+- PGP-Encrypted Email (Sensitive): See [LEGAL-PGP.asc](LEGAL-PGP.asc)
 
 **GitHub Issues for Technical Questions:** https://github.com/bb1nfosec/chanakya-opsec/issues
+
+**Why GitHub Issues?**
+- Public transparency (accountability)
+- Traceable (permanent record)
+- OPSEC-friendly (no email metadata leakage)
+- Community oversight
 
 ---
 
