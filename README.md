@@ -89,6 +89,55 @@ Not "how to be secure" — but "why security fails":
 
 **Key Differentiator**: Only OPSEC framework addressing AI-era attribution explicitly with rigorous quantification.
 
+### 6. **Multi-INT Intelligence Layers** 🌐🔍📡🗺️👥🔬
+
+**New**: Comprehensive intelligence discipline analysis:
+
+**🌐 Browser Layer**
+- WebRTC IP leaks (CRITICAL - bypasses VPN/Tor)
+- Canvas/WebGL fingerprinting (99.9% unique)
+- Font enumeration, extension detection
+- JavaScript timing attacks
+
+**🔍 OSINT Layer**
+- GitHub/GitLab metadata mining & commit timing correlation
+- LinkedIn team structure inference
+- Domain WHOIS correlation & passive DNS
+- Conference attendance tracking
+- Social media timing analysis
+
+**📡 SIGINT Layer**
+- Encrypted traffic analysis (despite TLS/VPN)
+- Cellular network correlation (IMSI catchers)
+- Tor flow correlation
+- Protocol fingerprinting
+
+**🗺️ GEOINT Layer**
+- Multi-source timezone triangulation (Bayesian fusion)
+- IP geolocation → satellite imagery correlation
+- Cell tower triangulation
+- Travel pattern analysis
+- Physical infrastructure identification
+
+**👥 HUMINT Layer**
+- Behavioral profiling (work/life patterns)
+- Language/cultural indicators in code
+- Social engineering attack surface
+- Conference badge photos → identity revelation
+- Team structure analysis
+
+**🔬 Forensics Layer**
+- Filesystem forensics (MAC times, deleted file recovery)
+- Memory forensics (RAM artifacts)
+- Browser forensics (history, cookies)
+- Network forensics (PCAP analysis)
+- Metadata forensics (EXIF, document metadata)
+- Timeline reconstruction
+
+**Cross-INT Fusion**: Multi-discipline signal correlation (e.g., OSINT + GEOINT + HUMINT → full attribution)
+
+**Key Innovation**: ONLY framework modeling realistic all-source intelligence fusion.
+
 ---
 
 ## Philosophy
