@@ -1,0 +1,22 @@
+# CHANAKYA OPSEC Framework - Requirements
+
+# No external dependencies for core framework
+# All analysis is done with Python standard library
+
+# Optional dependencies for extended functionality:
+
+# For more advanced binary analysis (optional)
+# pefile>=2023.2.7  # PE file analysis
+# pyelftools>=0.29  # ELF file analysis
+
+# For network packet capture analysis (optional)
+# scapy>=2.5.0  # Packet manipulation and analysis
+
+# For data visualization (optional)
+# matplotlib>=3.7.0  # Plotting correlation graphs
+# networkx>=3.0  # Infrastructure graph analysis
+
+# Development dependencies
+pytest>=7.4.0  # Testing framework
+black>=23.3.0  # Code formatting
+mypy>=1.3.0  # Type checking
