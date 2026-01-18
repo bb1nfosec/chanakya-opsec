@@ -77,6 +77,18 @@ Not "how to be secure" — but "why security fails":
 - Real-world case analysis
 - Layer correlation methodologies
 
+### 5. **AI-Era 2026 Enhancements** 🤖
+
+**New**: Addressing AI/ML-augmented attribution threats:
+- **AI-Augmented Attribution**: How Graph ML, LSTMs, and LLMs enable retrospective attribution
+- **Quantitative Signal Scoring**: Mathematical framework for attribution weight calculation (V × R × C formula)
+- **Retrospective Attribution Simulation**: Demonstrating how "safe" signals become dangerous years later
+- **Kernel-Adjacent Analysis**: Syscall patterns, timing side-channels, workload classification
+- **Behavioral Entropy Quantification**: Shannon entropy (H > 3.5 bits target) for unpredictability measurement
+- **Counter-AI OPSEC**: Defensive techniques specifically designed against ML correlation
+
+**Key Differentiator**: Only OPSEC framework addressing AI-era attribution explicitly with rigorous quantification.
+
 ---
 
 ## Philosophy
@@ -132,7 +144,12 @@ chanakya-opsec/
 │   ├── threat-model.md            # Adversary capabilities & detection methods
 │   ├── opsec-failure-taxonomy.md  # Classification of OPSEC failures
 │   ├── layer-correlation.md       # Cross-layer signal correlation
-│   └── real-world-case-analysis.md # Case studies of OPSEC failures
+│   ├── real-world-case-analysis.md # Case studies of OPSEC failures
+│   ├── ai-augmented-attribution.md # 🤖 AI/ML threat analysis (2026)
+│   ├── signal-scoring-methodology.md # 🤖 Quantitative signal scoring
+│   ├── kernel-adjacent-signals.md # 🤖 Syscall & timing analysis
+│   ├── behavioral-entropy-analysis.md # 🤖 Entropy quantification
+│   └── counter-ai-opsec.md        # 🤖 Defensive techniques vs. AI
 ├── framework/                     # Analysis framework components
 │   ├── userland/                  # Userland signal analysis
 │   ├── dns/                       # DNS OPSEC analysis
@@ -141,7 +158,8 @@ chanakya-opsec/
 │   └── correlation-engine/        # Multi-layer correlation engine
 ├── simulations/                   # Failure scenarios & demonstrations
 │   ├── failure-scenarios/         # Specific OPSEC failure simulations
-│   └── signal-correlation/        # Correlation demonstrations
+│   ├── signal-correlation/        # Correlation demonstrations
+│   └── ai-era/                    # 🤖 AI-era attribution simulations
 ├── examples/                      # Reference implementations
 ├── README.md                      # This file
 └── SECURITY.md                    # Security & legal notices
