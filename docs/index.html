@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHANAKYA Framework - Multi-Layer OPSEC Attribution Analysis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0e27;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a1f3a 0%, #2d1b69 100%);
+            padding: 40px 20px;
+            border-bottom: 3px solid #ff6b6b;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            color: #ff6b6b;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .tagline {
+            font-size: 1.2em;
+            color: #a0a0a0;
+            font-style: italic;
+        }
+        
+        .quote {
+            background: rgba(255,107,107,0.1);
+            border-left: 4px solid #ff6b6b;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        
+        .matrix-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .layer-card {
+            background: #1a1f3a;
+            border: 2px solid #2d4263;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .layer-card:hover {
+            transform: translateY(-5px);
+            border-color: #ff6b6b;
+            box-shadow: 0 10px 20px rgba(255,107,107,0.2);
+        }
+        
+        .layer-icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        .layer-title {
+            font-size: 1.5em;
+            color: #ff6b6b;
+            margin-bottom: 10px;
+        }
+        
+        .layer-desc {
+            color: #c0c0c0;
+            font-size: 0.9em;
+        }
+        
+        .layer-techs {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #2d4263;
+        }
+        
+        .tech-tag {
+            display: inline-block;
+            background: rgba(255,107,107,0.2);
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            color: #ff9999;
+        }
+        
+        .criticality {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        .critical { background: #ff4444; color: white; }
+        .high { background: #ff9944; color: white; }
+        .medium { background: #ffcc44; color: black; }
+        
+        .section {
+            background: #141829;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #ff6b6b;
+        }
+        
+        h2 {
+            color: #ff6b6b;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        
+        h3 {
+            color: #ff9999;
+            margin: 20px 0 10px 0;
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        li:before {
+            content: "▸";
+            color: #ff6b6b;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        a {
+            color: #ff9999;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: #ff6b6b;
+            text-decoration: underline;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            border-top: 1px solid #2d4263;
+            margin-top: 50px;
+        }
+        
+        code {
+            background: rgba(255,107,107,0.1);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #ff9999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CHANAKYA</h1>
+            <p class="tagline">Multi-Layer OPSEC Failure Analysis Framework</p>
+            <div class="quote">
+                <p>知己知彼，百战不殆</p>
+                <p>"Know yourself and know your enemy, and you will never be defeated in a hundred battles." — Sun Tzu</p>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="section">
+            <h2>Framework Overview</h2>
+            <p>CHANAKYA is a research-grade framework for understanding how operational security fails through <strong>emergent signal correlation across abstraction layers</strong>.</p>
+            <p style="margin-top: 15px;">Unlike traditional OPSEC checklists, CHANAKYA models how weak signals combine to create strong attribution through:</p>
+            <ul style="margin-top: 10px;">
+                <li>Multi-layer signal analysis (Technical + Intelligence disciplines)</li>
+                <li>AI/ML-augmented correlation (Graph ML, LSTMs, behavioral clustering)</li>
+                <li>Quantitative signal scoring (V × R × C attribution formula)</li>
+                <li>Cross-INT fusion (OSINT + GEOINT + HUMINT + SIGINT)</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Technical Layers</h2>
+            <div class="matrix-container">
+                <div class="layer-card" onclick="window.location.href='https://github.com/bb1nfosec/chanakya-opsec/blob/main/docs/browser-opsec-failures.md'">
+                    <div class="layer-icon">🌐</div>
+                    <div class="layer-title">Browser Layer</div>
+                    <div class="layer-desc">WebRTC IP leaks, Canvas fingerprinting, font enumeration, JS timing attacks</div>
+                    <span class="criticality critical">CRITICAL</span>
+                    <div class="layer-techs">
+                        <span class="tech-tag">WebRTC Leak</span>
+                        <span class="tech-tag">Canvas (99.9% unique)</span>
+                        <span class="tech-tag">Font Enum</span>
+                    </div>
+                </div>
+                
+                <div class="layer-card" onclick="window.location.href='https://github.com/bb1nfosec/chanakya-opsec/blob/main/framework/userland'">
+                    <div class="layer-icon">💻</div>
+                    <div class="layer-title">Userland Layer</div>
+                    <div class="layer-desc">Binary fingerprints, TLS signatures, environment leaks, timezone artifacts</div>
+                    <span class="criticality high">HIGH</span>
+                    <div class="layer-techs">
+                        <span class="tech-tag">Binary Entropy</span>
+                        <span class="tech-tag">TLS Fingerprint</span>
+                        <span class="tech-tag">Env Leaks</span>
+                    </div>
+                </div>
+                
+                <div class="layer-card" onclick="window.location.href='https://github.com/bb1nfosec/chanakya-opsec/blob/main/docs/kernel-adjacent-signals.md'">
+                    <div class="layer-icon">⚙️</div>
+                    <div class="layer-title">Kernel-Adjacent</div>
+                    <div class="layer-desc">Syscall patterns, timing side-channels, scheduler behavior, workload classification</div>
+                    <span class="criticality medium">MEDIUM</span>
+                    <div class="layer-techs">
+                        <span class="tech-tag">Syscall Timing</span>
+                        <span class="tech-tag">ML Workload ID</span>
+                    </div>
+                </div>
+                
+                <div class="layer-card" onclick="window.location.href='https://github.com/bb1nfosec/chanakya-opsec/blob/main/framework/dns'">
+                    <div class="layer-icon">🌍</div>
+                    <div class="layer-title">DNS Layer</div>
+                    <div class="layer-desc">Resolver correlation, sinkhole detection, query patterns, passive DNS graphs</div>
+                    <span class="criticality critical">CRITICAL</span>
+                    <div class="layer-techs">
+                        <span class="tech-tag">Sinkhole Detection</span>
+                        <span class="tech-tag">Passive DNS</span>
+                        <span class="tech-tag">TTL Analysis</span>
+                    </div>
+                </div>
+                
+                <div class="layer-card" onclick="window.location.href='https://github.com/bb1nfosec/chanakya-opsec/blob/main/framework/routing'">
+                    <div class="layer-icon">🔀</div>
+                    <div class="layer-title">Routing Layer</div>
+                    <div class="layer-desc">BGP announcements, AS-path analysis, route asymmetry, traffic localization</div>
+                    <span class="criticality high">HIGH</span>
+                    <div class="layer-techs">
+                        <span class="tech-tag">BGP Correlation</span>
+                        <span class="tech-tag">AS-Path</span>
+                    </div>
+                </div>
+                
+                <div class="layer-card" onclick="window.location.href='https://github.com/bb1nfosec/chanakya-opsec/blob/main/framework/metadata'">
+                    <div class="layer-icon">⏰</div>
+                    <div class="layer-title">Metadata/Temporal</div>
+                    <div class="layer-desc">Activity timing, operational cadence, behavioral entropy, timezone triangulation</div>
+                    <span class="criticality critical">CRITICAL</span>
+                    <div class="layer-techs">
+                        <span class="tech-tag">Timing Patterns</span>
+                        <span class="tech-tag">Entropy Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Intelligence Layers (Multi-INT)</h2>
+            <div class="matrix-container">
+                <div class="layer-card" onclick="window.location.href='https://github.com/bb1nfosec/chanakya-opsec/blob/main/docs/osint-correlation-techniques.md'">
+                    <div class="layer-icon">🔍</div>
+                    <div class="layer-title">OSINT</div>
+                    <div class="layer-desc">GitHub mining, LinkedIn inference, WHOIS correlation, conference tracking</div>
+                    <span class="criticality critical">CRITICAL</span>
+                    <div class="layer-techs">
+                        <span class="tech-tag">GitHub Commits</span>
+                        <span class="tech-tag">Code Stylometry</span>
+                    </div>
+                </div>
+                
+                <div class="layer-card" onclick="window.location.href='https://github.com/bb1nfosec/chanakya-opsec/blob/main/docs/sigint-attribution-vectors.md'">
+                    <div class="layer-icon">📡</div>
+                    <div class="layer-title">SIGINT</div>
+                    <div class="layer-desc">Traffic analysis, cellular correlation, IMSI catchers, Tor flow correlation</div>
+                    <span class="criticality high">HIGH</span>
+                    <div class="layer-techs">
+                        <span class="tech-tag">IMSI Catcher</span>
+                        <span class="tech-tag">Traffic ML</span>
+                    </div>
+                </div>
+                
+                <div class="layer-card" onclick="window.location.href='https://github.com/bb1nfosec/chanakya-opsec/blob/main/docs/geoint-geospatial-correlation.md'">
+                    <div class="layer-icon">🗺️</div>
+                    <div class="layer-title">GEOINT</div>
+                    <div class="layer-desc">Timezone triangulation, IP geolocation, satellite imagery, cell tower data</div>
+                    <span class="criticality high">HIGH</span>
+                    <div class="layer-techs">
+                        <span class="tech-tag">Bayesian TZ Fusion</span>
+                        <span class="tech-tag">Satellite Imagery</span>
+                    </div>
+                </div>
+                
+                <div class="layer-card" onclick="window.location.href='https://github.com/bb1nfosec/chanakya-opsec/blob/main/docs/humint-social-engineering.md'">
+                    <div class="layer-icon">👥</div>
+                    <div class="layer-title">HUMINT</div>
+                    <div class="layer-desc">Behavioral profiling, cultural indicators, conference attendance, social engineering</div>
+                    <span class="criticality critical">CRITICAL</span>
+                    <div class="layer-techs">
+                        <span class="tech-tag">Badge Photos</span>
+                        <span class="tech-tag">Work/Life Patterns</span>
+                    </div>
+                </div>
+                
+                <div class="layer-card" onclick="window.location.href='https://github.com/bb1nfosec/chanakya-opsec/blob/main/docs/forensics-attribution-vectors.md'">
+                    <div class="layer-icon">🔬</div>
+                    <div class="layer-title">Forensics</div>
+                    <div class="layer-desc">Filesystem analysis, memory forensics, EXIF extraction, timeline reconstruction</div>
+                    <span class="criticality high">HIGH</span>
+                    <div class="layer-techs">
+                        <span class="tech-tag">EXIF GPS</span>
+                        <span class="tech-tag">MAC Times</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>AI-Era Enhancements (2026)</h2>
+            <ul>
+                <li><strong>AI-Augmented Attribution:</strong> How Graph ML, LSTMs, and LLMs enable retrospective attribution</li>
+                <li><strong>Quantitative Signal Scoring:</strong> V × R × C formula (Visibility × Retention × Correlation)</li>
+                <li><strong>Behavioral Entropy:</strong> Shannon entropy H &gt; 3.5 bits target for unpredictability</li>
+                <li><strong>Counter-AI OPSEC:</strong> Defensive techniques against ML correlationli>
+                <li><strong>Retrospective Attribution:</strong> How "safe" signals become dangerous years later</li>
+            </ul>
+            <p style="margin-top: 20px;"><a href="https://github.com/bb1nfosec/chanakya-opsec/blob/main/docs/ai-augmented-attribution.md">Read Full AI-Era Analysis →</a></p>
+        </div>
+        
+        <div class="section">
+            <h2>Quick Start</h2>
+            <h3>1. Personal OPSEC Audit</h3>
+            <p><a href="https://github.com/bb1nfosec/chanakya-opsec/blob/main/docs/personal-opsec-checklist.md">Personal OPSEC Checklist →</a></p>
+            <p>5-minute pre-operation checklist: WebRTC leaks, DNS leaks, browser fingerprinting, temporal patterns</p>
+            
+            <h3>2. Framework Analysis</h3>
+            <p>Run framework analyzers:</p>
+            <code>python examples/opsec_audit_example.py</code>
+            
+            <h3>3. Simulations</h3>
+            <p>See how OPSEC fails:</p>
+            <code>python simulations/ai-era/retrospective-attribution.py</code>
+        </div>
+        
+        <div class="section">
+            <h2>Documentation</h2>
+            <ul>
+                <li><a href="https://github.com/bb1nfosec/chanakya-opsec/blob/main/docs/philosophy.md">Philosophy & Core Principles</a></li>
+                <li><a href="https://github.com/bb1nfosec/chanakya-opsec/blob/main/docs/threat-model.md">Threat Model (Tier 0-3.5)</a></li>
+                <li><a href="https://github.com/bb1nfosec/chanakya-opsec/blob/main/docs/opsec-failure-taxonomy.md">OPSEC Failure Taxonomy (50+ modes)</a></li>
+                <li><a href="https://github.com/bb1nfosec/chanakya-opsec/blob/main/docs/signal-scoring-methodology.md">Quantitative Signal Scoring</a></li>
+                <li><a href="https://github.com/bb1nfosec/chanakya-opsec/blob/main/docs/real-world-case-analysis.md">Real-World Case Studies</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p><strong>CHANAKYA</strong> — Where signals converge, attribution emerges.</p>
+            <p style="margin-top: 10px;">GitHub: <a href="https://github.com/bb1nfosec/chanakya-opsec">bb1nfosec/chanakya-opsec</a></p>
+            <p style="margin-top: 20px; color: #444;">Research & Education Only | MIT License</p>
+        </div>
+    </div>
+</body>
+</html>
