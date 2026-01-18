@@ -190,29 +190,48 @@ If you're looking for a scanner or a compliance tool, **this is not for you**.
 ```
 chanakya-opsec/
 ├── docs/                          # Strategic documentation
+│   ├── # Core Documentation
 │   ├── philosophy.md              # Core principles & threat philosophy
-│   ├── threat-model.md            # Adversary capabilities & detection methods
-│   ├── opsec-failure-taxonomy.md  # Classification of OPSEC failures
+│   ├── threat-model.md            # Adversary capabilities (Tier 0-3.5)
+│   ├── opsec-failure-taxonomy.md  # 50+ failure mode classification
 │   ├── layer-correlation.md       # Cross-layer signal correlation
-│   ├── real-world-case-analysis.md # Case studies of OPSEC failures
-│   ├── ai-augmented-attribution.md # 🤖 AI/ML threat analysis (2026)
-│   ├── signal-scoring-methodology.md # 🤖 Quantitative signal scoring
-│   ├── kernel-adjacent-signals.md # 🤖 Syscall & timing analysis
-│   ├── behavioral-entropy-analysis.md # 🤖 Entropy quantification
-│   └── counter-ai-opsec.md        # 🤖 Defensive techniques vs. AI
-├── framework/                     # Analysis framework components
-│   ├── userland/                  # Userland signal analysis
-│   ├── dns/                       # DNS OPSEC analysis
-│   ├── routing/                   # Routing & network plane analysis
-│   ├── metadata/                  # Metadata & temporal analysis
-│   └── correlation-engine/        # Multi-layer correlation engine
+│   ├── real-world-case-analysis.md # Silk Road, AlphaBay, APT case studies
+│   ├── # AI-Era Enhancements (2026)
+│   ├── ai-augmented-attribution.md # Graph ML, LSTMs, retrospective attribution
+│   ├── signal-scoring-methodology.md # V×R×C quantitative formula
+│   ├── kernel-adjacent-signals.md # Syscall patterns, timing side-channels
+│   ├── behavioral-entropy-analysis.md # Shannon entropy quantification
+│   ├── counter-ai-opsec.md        # Defensive techniques vs. ML
+│   ├── # Multi-INT Intelligence Layers
+│   ├── browser-opsec-failures.md  # WebRTC leaks, Canvas fingerprinting
+│   ├── osint-correlation-techniques.md # GitHub, LinkedIn, WHOIS correlation
+│   ├── sigint-attribution-vectors.md # Traffic analysis, cellular tracking
+│   ├── geoint-geospatial-correlation.md # Timezone triangulation, satellite
+│   ├── humint-social-engineering.md # Behavioral profiling, conferences
+│   ├── forensics-attribution-vectors.md # Filesystem, memory, EXIF
+│   ├── # Advanced Operational Techniques
+│   ├── anti-forensics-plausible-deniability.md # HiddenVM, amnesic OS
+│   ├── financial-privacy-cryptocurrency.md # Monero, CoinJoin, chain analysis
+│   ├── infrastructure-stealth-camouflage.md # Redirectors, Shodan evasion
+│   ├── personal-opsec-checklist.md # Military-grade operational manual
+│   └── index.html                 # MITRE-style interactive wiki
+├── framework/                     # Analysis framework (9 modules)
+│   ├── userland/                  # Binary fingerprints, TLS, environment leaks
+│   ├── dns/                       # Resolver correlation, sinkhole detection
+│   ├── routing/                   # BGP, AS-path, route asymmetry
+│   ├── metadata/                  # Activity timing, operational cadence
+│   └── correlation-engine/        # Multi-layer signal fusion
 ├── simulations/                   # Failure scenarios & demonstrations
-│   ├── failure-scenarios/         # Specific OPSEC failure simulations
-│   ├── signal-correlation/        # Correlation demonstrations
-│   └── ai-era/                    # 🤖 AI-era attribution simulations
+│   ├── failure-scenarios/         # DNS sinkhole, temporal correlation
+│   └── ai-era/                    # Retrospective attribution simulation
+├── tests/                         # Test infrastructure
+│   ├── test_attribution_scenarios.py # 5 realistic failure scenarios
+│   └── personal_opsec_audit.py    # Pre-operation 5-minute audit
 ├── examples/                      # Reference implementations
+├── CONTRIBUTING.md                # Git workflow & development guide
 ├── README.md                      # This file
-└── SECURITY.md                    # Security & legal notices
+├── SECURITY.md                    # Security & ethical use policy
+└── requirements.txt               # Dependencies
 ```
 
 ---
@@ -240,8 +259,11 @@ CHANAKYA **is**:
 1. **Read the philosophy** → `docs/philosophy.md`
 2. **Understand failure taxonomy** → `docs/opsec-failure-taxonomy.md`
 3. **Model your threats** → `docs/threat-model.md`
-4. **Explore framework components** → `framework/`
-5. **Run simulations** → `simulations/`
+4. **Pre-operation audit** → `python tests/personal_opsec_audit.py`
+5. **Explore Multi-INT layers** → Browse `docs/` (23 strategic documents)
+6. **Run framework** → `python examples/opsec_audit_example.py`
+7. **Test attribution scenarios** → `python tests/test_attribution_scenarios.py`
+8. **Interactive wiki** → Open `docs/index.html` in browser
 
 ---
 
