@@ -16,6 +16,42 @@
 
 CHANAKYA is a research framework for understanding **how operational security fails through emergent signal correlation across abstraction layers**.
 
+---
+
+## ⚖️ Legal Disclaimer
+
+**🚨 IMPORTANT: READ BEFORE USE**
+
+This repository is for **RESEARCH and EDUCATION ONLY**.
+
+✅ **LAWFUL USE:**
+- Academic research
+- Authorized security testing
+- Journalism & whistleblowing (lawful)
+- Privacy protection from stalking/harassment
+- Educational purposes
+
+❌ **PROHIBITED USE:**
+- Criminal activity (any jurisdiction)
+- Terrorism or material support
+- Malicious hacking
+- Evasion of lawful prosecution for serious crimes
+- Stalking, harassment, doxing
+
+**YOU ARE 100% RESPONSIBLE FOR YOUR ACTIONS.**
+
+- The maintainers bear **NO responsibility** for misuse
+- "I learned it from CHANAKYA" is **NOT** a legal defense
+- **No anonymity guarantee** — techniques may fail
+- Laws vary by country — **know your local laws**
+
+**High-Risk Jurisdictions:** China, Russia, Saudi Arabia, UAE, Iran, North Korea (content may be illegal)
+
+**📧 Legal Compliance & Removal Requests:** bb1nfosec@protonmail.com
+
+**📄 Full Legal Terms:** See **[LEGAL.md](LEGAL.md)** for complete disclaimer, DMCA procedures, and removal request process.
+
+**By using this repository, you acknowledge that you have read and agree to these terms.**
 
 ---
 
